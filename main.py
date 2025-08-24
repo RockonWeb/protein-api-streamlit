@@ -36,7 +36,7 @@ def get_database_connection():
     """Создает подключение к базе данных"""
     try:
         # Путь к базе данных (может быть изменен)
-        db_path = os.getenv("DATABASE_PATH", "metabolome.db")
+        db_path = os.getenv("DATABASE_PATH", "data/metabolome.db")
         
         # Проверяем существование файла
         if not os.path.exists(db_path):
